@@ -4,7 +4,7 @@
 FROM ubuntu:latest
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /
 
 # Copy files from your host to your current working directory
 COPY . .
@@ -13,4 +13,4 @@ COPY . .
 EXPOSE 8080/tcp
 
 # Run the application
-CMD ["/app/writefreely"]
+CMD ["writefreely"]
