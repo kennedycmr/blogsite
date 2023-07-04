@@ -1,6 +1,4 @@
 # Specify the parent image from which we build
-#FROM nginx:latest
-#FROM ubuntu:latest
 FROM ubuntu:latest
 
 # Set the working directory
@@ -13,4 +11,4 @@ COPY . .
 EXPOSE 8080/tcp
 
 # Run the application
-CMD ["writefreely"]
+CMD ["/writefreely"]
