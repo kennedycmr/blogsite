@@ -2,10 +2,10 @@
 FROM ubuntu:latest
 
 # Set the working directory
-WORKDIR /
+WORKDIR /app
 
 # Copy files from your host to your current working directory
-COPY . .
+COPY . /app/.
 
 # Webserver will listen on this port
 EXPOSE 8080/tcp
