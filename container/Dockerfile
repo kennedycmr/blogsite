@@ -6,6 +6,7 @@ WORKDIR /app
 
 # Copy files from your host to your current working directory
 COPY . /app/.
+COPY .prod-config.ini /app/config.ini
 
 # Webserver will listen on this port
 EXPOSE 8080/tcp
