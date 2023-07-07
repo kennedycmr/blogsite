@@ -11,4 +11,4 @@ COPY . /app/.
 EXPOSE 8080/tcp
 
 # Run the application
-CMD ["/writefreely"]
+CMD ["/app/writefreely"]
